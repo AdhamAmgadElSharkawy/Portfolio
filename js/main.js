@@ -76,3 +76,24 @@ window.addEventListener('scroll',()=>{
         }
     })
 })
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        button.classList.add('active');
+        const filterValue = button.getAttribute('data-filter');
+        
+        projectCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            
+            if (filterValue === 'all' || cardCategory === filterValue) {
+                card.classList.remove('hide');
+            } else {
+                card.classList.add('hide');
+            }
+        });
+    });
+});
