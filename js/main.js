@@ -60,6 +60,18 @@ navLinks.forEach(link => {
 
 window.addEventListener('scroll',()=>{
     const scrollY = window.scrollY;
+
+    if ((window.innerHeight + scrollY) >= document.documentElement.scrollHeight - 5) {
+        const activeLink = document.querySelector('.nav-link.active');
+        if (activeLink) {
+            activeLink.classList.remove('active');
+        }
+        const contactLink = document.querySelector('.nav-link[href="#contact"]');
+        if (contactLink) {
+            contactLink.classList.add('active');
+        }
+        return;
+    }
     allsections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 80; 

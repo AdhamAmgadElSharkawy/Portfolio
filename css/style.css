@@ -328,6 +328,7 @@ body{
     font-weight: 600;
     cursor: pointer;
     border-radius: 25px;
+    -webkit-tap-highlight-color: transparent;
     transition: all 0.25s ease;
 }
 
@@ -424,6 +425,80 @@ body{
     background-color: #334155; 
 }
 
+.contact-section{
+    padding: 100px 0 100px 0;
+    border-top: 1px solid var(--border-color);
+}
+.contact-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+.direct-contact-card{
+    background-color: var(--dropdown-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 35px 25px;        /* هوامش داخلية واسعة ومريحة */
+    text-align: center;        /* توسيط كل النصوص والأيقونات في المنتصف */
+    text-decoration: none;     /* إلغاء خط اللينكات الافتراضي */
+    display: flex;
+    flex-direction: column;    /* رص العناصر عمودياً */
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--nav-shadow);
+}
+.direct-contact-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 15px 0 8px 0;
+}
+
+.direct-contact-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    word-break: break-all;     /* تفادي خروج الإيميل الطويل برة الكارت في الموبايل */
+}
+
+/* دائرة الأيقونة الكبيرة فوق */
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+/* تلوين الأيقونات حسب هويتها الرسمية لجعل التصميم مبهج */
+.email-icon { color: #ea4335; }    /* أحمر جيميل */
+.linkedin-icon { color: #0077b5; } /* أزرق لينكد إن */
+.github-icon { color: #24292e; }   /* أسود جيتهاب */
+
+/* الكلمة السحرية التفاعلية تحت (Hint) */
+.action-hint {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #2563eb;            /* أزرق الثيم الرئيسي */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0.7;              /* خفيفة افتراضياً */
+    transition: gap 0.2s ease, opacity 0.2s ease;
+}
+[data-theme="dark"] .github-icon {
+    color: #ffffff;            /* لوجو جيتهاب يقلب أبيض في الدارك مود */
+}
 @media(max-width: 650px){
     .hamburger{
         display: flex;
@@ -465,6 +540,16 @@ body{
     .about-actions {
         justify-content: center;
     }
+    .filter-tabs{
+        width: 100%;
+        max-width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        padding: 6px;
+    }
+
     .project-card {
         flex-direction: column; 
     }
