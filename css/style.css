@@ -455,11 +455,11 @@ body{
     background-color: var(--dropdown-bg);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 35px 25px;        /* هوامش داخلية واسعة ومريحة */
-    text-align: center;        /* توسيط كل النصوص والأيقونات في المنتصف */
-    text-decoration: none;     /* إلغاء خط اللينكات الافتراضي */
+    padding: 35px 25px;
+    text-align: center; 
+    text-decoration: none;
     display: flex;
-    flex-direction: column;    /* رص العناصر عمودياً */
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     box-shadow: var(--nav-shadow);
@@ -475,10 +475,10 @@ body{
     font-size: 0.95rem;
     color: var(--text-muted);
     margin-bottom: 20px;
-    word-break: break-all;     /* تفادي خروج الإيميل الطويل برة الكارت في الموبايل */
+    word-break: break-all;
 }
 
-/* دائرة الأيقونة الكبيرة فوق */
+
 .card-icon {
     width: 60px;
     height: 60px;
@@ -492,25 +492,151 @@ body{
     transition: all 0.3s ease;
 }
 
-/* تلوين الأيقونات حسب هويتها الرسمية لجعل التصميم مبهج */
-.email-icon { color: #ea4335; }    /* أحمر جيميل */
-.linkedin-icon { color: #0077b5; } /* أزرق لينكد إن */
-.github-icon { color: #24292e; }   /* أسود جيتهاب */
 
-/* الكلمة السحرية التفاعلية تحت (Hint) */
+.email-icon { color: #ea4335; }
+.linkedin-icon { color: #0077b5; }
+.github-icon { color: #24292e; }
+
+
 .action-hint {
     font-size: 0.88rem;
     font-weight: 600;
-    color: #2563eb;            /* أزرق الثيم الرئيسي */
+    color: #2563eb;
     display: flex;
     align-items: center;
     gap: 6px;
-    opacity: 0.7;              /* خفيفة افتراضياً */
+    opacity: 0.7; 
     transition: gap 0.2s ease, opacity 0.2s ease;
 }
 [data-theme="dark"] .github-icon {
-    color: #ffffff;            /* لوجو جيتهاب يقلب أبيض في الدارك مود */
+    color: #ffffff;
 }
+/* ===================================
+   EXPERIENCE SECTION STYLES
+=================================== */
+.experience-section {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.experience-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.exp-card {
+    background-color: var(--dropdown-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--nav-shadow);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    border-left: 4px solid var(--accent-color);
+}
+
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.exp-role {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+
+.exp-company {
+    font-size: 1.05rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.exp-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.exp-meta i {
+    margin-right: 4px;
+}
+
+.exp-badge {
+    background-color: var(--dropdown-hover);
+    color: var(--text-muted);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.exp-badge.active-badge {
+    background-color: rgba(37, 99, 235, 0.12);
+    color: var(--accent-color);
+}
+
+.exp-badge.active-badge i {
+    font-size: 0.55rem;
+    color: #10b981;
+}
+
+.exp-bullets {
+    margin: 15px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.exp-bullets li {
+    list-style-type: disc;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.exp-tags span {
+    background-color: var(--dropdown-hover);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+[data-theme='dark'] .exp-tags span {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
 @media(max-width: 650px){
     .hamburger{
         display: flex;
@@ -575,5 +701,15 @@ body{
     .about-education {
         justify-content: center;
         font-size: 0.92rem;
+    }
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .exp-card {
+        padding: 22px 18px;
+    }
+    .exp-role {
+        font-size: 1.15rem;
     }
 }
