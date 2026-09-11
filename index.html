@@ -31,10 +31,16 @@
                     <a href="#skills" class="nav-link">skills</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#services" class="nav-link">services</a>
+                </li>
+                <li class="nav-item">
                     <a href="#experience" class="nav-link">experience</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">credentials</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">contact</a>
@@ -67,13 +73,22 @@
             <div class="about-text">
                 <span class="sub-title">Hello, I'm</span>
                 <h1 class="main-title">Adham El-Sharkawy</h1>
-                <h2 class="job-title">Software Engineer & AI Enthusiast</h2>
+                <h2 class="job-title">Software & Machine Learning Engineer</h2>
+                <p class="about-usp">
+                    <i class="fas fa-quote-left" style="color: var(--accent-color); margin-right: 6px; font-size: 0.85rem;"></i>
+                    <em>A machine learning model is only as powerful as the backend systems that serve it to the world.</em>
+                </p>
                 <p class="description">
-                    I am a Junior student at the Faculty of Computing and Artificial Intelligence, Cairo University (FCAI-CU), passionate about software engineering and deeply interested in Artificial Intelligence.
+                    I am a Computer Science student at Cairo University (FCAI-CU) specializing in Machine Learning and production-grade backend architecture. My technical foundation began in low-level logic, data structures, and competitive problem-solving (ECPC & Codeforces), giving me the discipline to write clean, performant code.
+                    <br><br>
+                    Currently training in the <strong>Digital Egypt Pioneers Initiative (DEPI)</strong> as a Microsoft Machine Learning Engineer and certified by <strong>NVIDIA DLI</strong>, I focus on bridging the gap between cutting-edge LLMs, RAG pipelines, and reliable backend services that bring intelligent systems into real-world production.
                 </p>
                 <div class="about-actions">
-                    <a href="assets/Adham-El-Sharkawy-Resume.pdf" download="Adham-El-Sharkawy-Resume.pdf" class="btn-cv">
-                        Download Resume <i class="fas fa-download" aria-hidden="true"></i>
+                    <a href="#contact" class="btn-cv">
+                        Get In Touch <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                        <a href="assets/Adham-El-Sharkawy-Resume.pdf" download="Adham-El-Sharkawy-Resume.pdf" class="btn-secondary">
+                        Resume <i class="fas fa-download" aria-hidden="true"></i>
                     </a>
                     <div class="about-socials">
                         <a href="https://github.com/AdhamAmgadElSharkawy" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
@@ -89,8 +104,8 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="skills-section">
-        <div class="skills-container">
+    <section id="skills" class="skills-section reveal">
+        <div class="skills-container reveal">
             <div class="section-header">
                 <h2 class="section-title">My Skills</h2>
                 <p class="section-subtitle">Technologies and tools I work with</p>
@@ -105,22 +120,58 @@
                         <div class="tech-box" title="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
                     </div>
                 </div>
+
+                <!-- Machine Learning & Data Science -->
                 <div class="skill-group">
-                    <h3 class="group-title">Web Development (Frontend & Backend)</h3>
+                    <h3 class="group-title">Machine Learning & Data Science</h3>
                     <div class="icons-row">
-                        <div class="tech-box" title="HTML5"><i class="devicon-html5-plain colored"></i></div>
-                        <div class="tech-box" title="CSS3"><i class="devicon-css3-plain colored"></i></div>
-                        <div class="tech-box" title="Django"><i class="devicon-django-plain colored"></i></div>
+                        <div class="tech-box" title="NumPy"><i class="devicon-numpy-plain colored"></i></div>
+                        <div class="tech-box" title="Pandas"><i class="devicon-pandas-plain colored"></i></div>
+                        <div class="tech-box" title="Scikit-Learn"><i class="devicon-scikitlearn-plain colored"></i></div>
+                        <div class="tech-box" title="Matplotlib"><i class="devicon-matplotlib-plain colored"></i></div>
+                        <div class="tech-box" title="Seaborn">
+                            <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn">
+                        </div>
                     </div>
                 </div>
+                <!-- Generative AI & LLM Frameworks -->
                 <div class="skill-group">
-                    <h3 class="group-title">Databases</h3>
+                    <h3 class="group-title">Generative AI & LLM Systems</h3>
+                    <div class="icons-row">
+                        <div class="tech-box" title="LangChain">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/langchain.svg" alt="LangChain" class="ai-icon">
+                        </div>
+                        <div class="tech-box" title="LangGraph">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/langgraph.svg" alt="LangGraph" class="ai-icon">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend, APIs & Web -->
+                <div class="skill-group">
+                    <h3 class="group-title">Backend & Model Serving</h3>
+                    <div class="icons-row">
+                        <div class="tech-box" title="FastAPI"><i class="devicon-fastapi-plain colored"></i></div>
+                        <div class="tech-box" title="Django"><i class="devicon-django-plain colored"></i></div>
+                        <div class="tech-box" title="HTML5"><i class="devicon-html5-plain colored"></i></div>
+                        <div class="tech-box" title="CSS3"><i class="devicon-css3-plain colored"></i></div>
+                    </div>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="skill-group">
+                    <h3 class="group-title">Databases & Development Tools</h3>
                     <div class="icons-row">
                         <div class="tech-box" title="Microsoft SQL Server">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="Microsoft SQL Server">
                         </div>
+                        <div class="tech-box" title="PostgreSQL">
+                            <i class="devicon-postgresql-plain colored"></i>
+                        </div>
+                        <div class="tech-box" title="Git"><i class="devicon-git-plain colored"></i></div>
                     </div>
                 </div>
+                
                 <div class="skill-group">
                     <h3 class="group-title">Tools & OS</h3>
                     <div class="icons-row">
@@ -131,9 +182,72 @@
         </div>
     </section>
 
+
+    <!-- SERVICES SECTION START -->
+<section id="services" class="services-section reveal">
+    <div class="services-container">
+        <div class="section-header">
+            <h2 class="section-title">Offered Services</h2>
+            <p class="section-subtitle">Client-focused technical solutions from exploratory analysis to production deployment</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- 2. Generative AI & LLM Pipelines -->
+            <div class="service-card reveal">
+                <div class="service-icon ai-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="service-title">Generative AI & RAG Solutions</h3>
+                <p class="service-desc">
+                    Designing intelligent conversational agents and document retrieval systems. Integrating modern LLM frameworks to connect private knowledge bases with foundation models safely.
+                </p>
+                <ul class="service-deliverables">
+                    <li><i class="fas fa-check"></i> Retrieval-Augmented Generation (RAG)</li>
+                    <li><i class="fas fa-check"></i> Semantic Search & Vector Embeddings</li>
+                    <li><i class="fas fa-check"></i> Prompt Engineering & Context Curation</li>
+                </ul>
+            </div>
+
+            <!-- 3. Web Backend & API Development -->
+            <div class="service-card reveal">
+                <div class="service-icon backend-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3 class="service-title">Web Backend & API Development</h3>
+                <p class="service-desc">
+                    Building robust, secure, and scalable server-side architectures for modern web platforms and mobile backends. Specializing in high-performance RESTful APIs, relational database design, and serving AI/ML services into production.
+                </p>
+                <ul class="service-deliverables">
+                    <li><i class="fas fa-check"></i> Web & REST API Development (Django / FastAPI)</li>
+                    <li><i class="fas fa-check"></i> Relational Database Modeling (PostgreSQL / MSSQL)</li>
+                    <li><i class="fas fa-check"></i> Authentication, CRUD & Model Serving Pipelines</li>
+                </ul>
+            </div>
+
+            <!-- 4. High-Performance Software Engineering -->
+            <div class="service-card reveal">
+                <div class="service-icon cpp-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h3 class="service-title">Custom Software & Algorithmic Engines</h3>
+                <p class="service-desc">
+                    Developing modular desktop applications and memory-critical processing tools using modern C++ and Object-Oriented Design to ensure maximum computational speed.
+                </p>
+                <ul class="service-deliverables">
+                    <li><i class="fas fa-check"></i> Object-Oriented Frameworks (OOP)</li>
+                    <li><i class="fas fa-check"></i> Custom Image/Audio Data Manipulation</li>
+                    <li><i class="fas fa-check"></i> Algorithmic Optimization & Complexity Reduction</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    
 <!-- EXPERIENCE SECTION START -->
-    <section id="experience" class="experience-section">
-        <div class="experience-container">
+    <section id="experience" class="experience-section reveal">
+        <div class="experience-container reveal">
             <div class="section-header">
                 <h2 class="section-title">Experience & Training</h2>
                 <p class="section-subtitle">Professional training initiatives and specialized bootcamps</p>
@@ -197,8 +311,8 @@
         </div>
     </section>
     <!-- EXPERIENCE SECTION END -->
-    <section id="projects" class="projects-section">
-    <div class="projects-container">
+    <section id="projects" class="projects-section reveal">
+    <div class="projects-container reveal">
         
         <div class="section-header">
             <h2 class="section-title">Projects</h2>
@@ -324,8 +438,71 @@
     </div>
 </section>
 
-<section id="contact" class="contact-section">
-    <div class="contact-container">
+
+<!-- ACHIEVEMENTS & CERTIFICATIONS SECTION -->
+<section id="achievements" class="achievements-section reveal">
+    <div class="achievements-container">
+        <div class="section-header">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <p class="section-subtitle">Verified credentials, official competitions, and technical milestones</p>
+        </div>
+
+        <div class="achievements-grid">
+            
+            <!-- 1. NVIDIA & ITI Certificate -->
+            <div class="achievement-card reveal">
+                <div class="achieve-media">
+                    <img src="assets/images/ITI cer.jpeg" alt="NVIDIA DLI Certificate">
+                    <span class="achieve-type-badge cert-badge"><i class="fas fa-certificate"></i> Verified Credential</span>
+                </div>
+                <div class="achieve-info">
+                    <div class="achieve-meta">
+                        <span class="achieve-issuer"><i class="fas fa-award"></i> NVIDIA DLI & ITI</span>
+                        <span class="achieve-date">2026</span>
+                    </div>
+                    <h3 class="achieve-title">Building LLM Applications with Prompt Engineering</h3>
+                    <p class="achieve-desc">
+                        Official competency certificate covering Generative AI architecture, prompt engineering techniques, and RAG pipelines for LLM applications.
+                    </p>
+                    <div class="achieve-actions">
+                        <a href="assets/images/ITI cer.jpeg" target="_blank" class="btn-achieve">
+                            View Certificate <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. ECPC 2026 -->
+            <div class="achievement-card reveal">
+                <div class="achieve-media">
+                    <img src="assets/images/ECPC PHOTO.jpeg" alt="ECPC 2026 Contest">
+                    <span class="achieve-type-badge contest-badge"><i class="fas fa-trophy"></i> Competition</span>
+                </div>
+                <div class="achieve-info">
+                    <div class="achieve-meta">
+                        <span class="achieve-issuer"><i class="fas fa-code"></i> ICPC Foundation</span>
+                        <span class="achieve-date">2026</span>
+                    </div>
+                    <h3 class="achieve-title">ECPC 2026 Contestant</h3>
+                    <p class="achieve-desc">
+                        Competed in the Egyptian Collegiate Programming Contest (ECPC), tackling algorithmic challenges in dynamic programming, graphs, and number theory.
+                    </p>
+                    <div class="achieve-actions">
+                        <a href="assets/images/ECPC PHOTO.jpeg" target="_blank" class="btn-achieve">
+                            View Milestone <i class="fas fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact-section reveal">
+    <div class="contact-container reveal">
         <div class="section-header">
             <h2 class="section-title">Get In Touch</h2>
             <p class="section-subtitle">I'm always open to discussing new projects, opportunities, or baking tech together!</p>
@@ -356,6 +533,29 @@
         </div>
     </div>
 </section>
+
+
+
+<footer class="footer reveal">
+    <div class="footer-container">
+        <div class="footer-content">
+            <span class="footer-brand">Adham El-Sharkawy</span>
+            <p class="footer-tagline">Crafting scalable backends & production-ready AI systems.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/AdhamAmgadElSharkawy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/adham-el-sharkawy/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:adham.elsharkawy0666@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Adham El-Sharkawy. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <a href="#about" class="back-to-top" title="Back to top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
     <script src="js/main.js"></script>
 </body>
 </html>
